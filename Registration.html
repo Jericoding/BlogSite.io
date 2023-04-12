@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration and Log In Form</title>
+</head>
+<body bgcolor="#783">
+    <font face="arial">
+        <form action="" method="">
+            <table border="0" width="100%">
+                <tr><!--Company Name-->
+                    <td >
+                        <img src="logo.jpg" alt="" width="100px" style="border-radius: 50px;">
+                    </td>
+                    <td >
+                        <font size="5" face="Times New Roman"><h1>WEB COMPANY</h1></font>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" style="background-color: rgb(4, 107, 167);">
+                        <h2>Registration Form</h2>
+                    </td>
+                    <td align="center" style="background-color: rgb(230, 93, 3);">
+                        <h2>Login Form</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background-color: rgb(9, 139, 214);"><!--Registration Column for Personal Information-->
+                        <fieldset>
+                            <legend>
+                                <font size="6">Personal Information </font>
+                            </legend>
+                                <font size="5">
+                                    <table border=0 width="100%">
+                                        <tr>
+                                            <td>
+                                                <label for="lastName">Last Name</label>
+                                            </td>
+                                            <td>
+                                                <label for="firstName">First Name</label>
+                                            </td>
+                                            <td>
+                                                <label for="middleName">Middle Name</label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                            <input type="text" id="LastName" name="lastName" size="25" style="font-size: 20px;padding: 5px;">
+                                            </td>
+                                            <td> 
+                                                <input type="text" id="firstName" name="firstName" size="25" style="font-size: 20px;padding: 5px;">
+                                            </td>
+                                            <td> 
+                                                <input type="text" id="middleName" name="middleName" size="25" style="font-size: 20px;padding: 5px;";">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label for="birthplace">Birthplace</label>
+                                            </td>
+                                            <td>
+                                                <label for="address">Current Address</label>
+                                            </td>
+                                            <td>
+                                                <label for="status">Civil Status</label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top">
+                                                <input type="text" id="birthplace" name="birthplace" size="30" style="font-size: 20px;padding: 5px 2px;";">
+                                            </td>
+                                            <td valign="top">
+                                                <input type="text" id="address" name="address" size="30" placeholder="Ex. Street/Barangay, Town, Province" style="font-size: 20px;padding: 5px 2px;">
+                                            </td>
+                                            <td>
+                                                <table width="100%">
+                                                    <tr>
+                                                        <td>
+                                                            <input type="radio" name="status" id="status" value="single" checked style="width: 25px; height: 20px;">Single
+                                                        </td>
+                                                        <td>
+                                                            <input type="radio" name="status" id="status" value="married" style="width: 25px; height: 20px;">Married
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="radio" name="status" id="status" value="divorce" style="width: 25px; height: 20px;">Divorce
+                                                        </td>
+                                                        <td>
+                                                            <input type="radio" name="status" id="status" value="widowed" style="width: 25px; height: 20px;">Widowed
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label for="birthdate">Birthdate</label>
+                                            </td>
+                                            <td>
+                                                <label for="sex">Sex</label>
+                                            </td>
+                                            <td>
+                                                <label for="contact">Contact Number</label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="date" name="birthdate" id="birthdate" style="font-size: 20px;padding: 3px 10px;">
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="sex" id="sex" value="M" checked style="width: 25px; height: 20px;">Male
+                                                <input type="radio" name="sex" id="sex" value="F" style="width: 25px; height: 20px;">Female
+                                            </td>
+                                            <td>
+                                                <select name="countryCode" id="countryCode" style="font-size: 20px;padding: 5px">
+                                                    <option value="+63" selected>+63</option>
+                                                    <option value="+64">+64</option>
+                                                    <option value="+65">+65</option>
+                                                    <option value="+66">+66</option>
+                                                </select>
+                                                
+                                                </select>
+                                                <input type="text" id="contact" name="contact" size="11" maxlength="10" placeholder="Ex. 9876543210" style="font-size: 20px;padding: 5px 10px;">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </font>
+                            </fieldset>
+                        </td>
+                        <td width="30%" valign="top" rowspan="2" style="background-color: rgb(231, 156, 59);"><!--Login Column-->
+                            <font face="arial" size="5">
+                                <table border="0" width="100%" style="margin-top: 30px;">
+                                    <tr>
+                                        <td colspan="2">
+                                            <label for="userName">Enter Username</label>
+                                        </td>
+                                    </tr>
+                                    <tr height="30px">
+                                        <td colspan="2">
+                                            <input type="email" name="userName" id="userName" placeholder="Example@gmail.com" size=25 style="font-size: 20px;padding: 10px 0 10px 2px;width: 99%;">
+                                        </td>
+                                    </tr>
+                                    <tr height="50px">
+                                        <td colspan="2">
+                                            <label for="pass">Enter Password</label>
+                                        </td>
+                                    </tr>
+                                    <tr height="30px">
+                                        <td colspan="2">
+                                            <input type="password" name="pass" id="pass" size=25 style="font-size: 20px;padding: 10px 0 10px 2px;width:99%;"">
+                                        </td>
+                                    </tr>
+                                    <tr height="50px">
+                                        <td>
+                                            <input type="checkbox" name="rememberMe" id="rememberMe" style="width: 25px; height: 20px;"> <font size="5">
+                                            Remember Me
+                                        </font>
+                                        </td>
+                                        <td align="right">
+                                            <font size="5">
+                                                <a href="#">Forgot Password?</a>
+                                            </font>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" colspan="2">
+                                            <input type="submit" value="Log In" size=30 style="background-color: rgb(22, 208, 255);font-size: 20px;padding: 15px;border: none; border-radius: 5px; width: 100%;">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" colspan="2">
+                                            <input type="button" value="Register"  size=30 style="background-color: rgb(248, 9, 49);font-size: 20px;padding: 15px; border: none; border-radius: 5px;width: 100%;">
+                                        </td>
+                                    </tr>
+                                    <tr height="20">
+                                        <td colspan="2" align="center">
+                                            OR USING 
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="right">
+                                           Facebook
+                                        </td>
+                                        <td>
+                                            <img src="images/facebook2.png" alt width="30px">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="right">
+                                            Google
+                                        </td>
+                                        <td> 
+                                            <img src="images/google2.png" alt="" width="30px">
+                                        </td>
+                                    </tr>
+                                    
+                                </table>
+                            </font> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: rgb(9, 139, 214);"><!--Registration Column for Educational Background-->
+                            <fieldset>
+                                <legend>
+                                    <font size="6">Educational Background</font>
+                                </legend>
+                                <font size="5">
+                                    <table border=0 width="100%">
+                                        <tr>
+                                            <td>
+                                                <label for="pEducation">Primary Education</label>
+                                            </td>
+                                            <td>
+                                                <label for="pGraduated">Date Graduate</label>
+                                            </td>
+                                            <td>
+                                                <label for="pAchievements">Achievements</label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top">
+                                                <input type="text" id="pEducation" name="pEducation" size="40" style="font-size: 20px;padding: 5px;">
+                                            </td>
+                                            <td valign="top">
+                                                <input type="date" name="pGraduated" id="pGraduated" style="font-size: 20px;padding: 3px;">
+                                            </td>
+                                            <td>
+                                                <textarea name="pAchievements" id="pAchievements" cols="30" rows="1" style="font-size: 20px;padding: 5px;"></textarea >
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label for="sEducation">Secondary Education</label>
+                                            </td>
+                                            <td>
+                                                <label for="sGraduated">Date Graduate</label>
+                                            </td>
+                                            <td>
+                                                <label for="sAchievements">Achievements</label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top">
+                                                <input type="text" id="sEducation" name="sEducation" size="40" style="font-size: 20px;padding: 5px;">
+                                            </td>
+                                            <td valign="top">
+                                                <input type="date" name="sGraduated" id="sGraduated" style="font-size: 20px;padding: 3px;">
+                                            </td>
+                                            <td>
+                                                <textarea name="sAchievements" id="sAchievements" cols="30" rows="1" style="font-size: 20px;padding: 5px;"></textarea>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label for="tEducation">Tertiary Education</label>
+                                            </td>
+                                            <td>
+                                                <label for="tGraduated">Date Graduate</label>
+                                            </td>
+                                            <td>
+                                                <label for="tAchievements">Achievements</label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top">
+                                                <input type="text" id="tEducation" name="tEducation" size="40" style="font-size: 20px;padding: 5px;">
+                                            </td>
+                                            <td valign="top">
+                                                <input type="date" name="tGraduated" id="tGraduated" style="font-size: 20px;padding: 3px;">
+                                            </td>
+                                            <td>
+                                                <textarea name="tAchievements" id="tAchievements" cols="30" rows="1" style="font-size: 20px;padding: 5px;"></textarea>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </font>
+                            </fieldset>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: rgb(9, 139, 214);"><!--Registration Column for Skill and Proficiency-->
+                            <fieldset>
+                                <legend>
+                                    <font size="6">Skills and Profieciency</font>
+                                </legend>
+                                <font size="5">
+                                    <table width="100%" border=0>
+                                        <tr>
+                                            <td>
+                                                <label for="ProgSkills">Programming Skills</label>
+                                            </td>
+                                            <td>
+                                                <label for="otherSkills">Other Skills</label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <table width="100%">
+                                                    <tr>
+                                                        <td>
+                                                            <input type="checkbox" name="" id="" style="width: 25px; height: 20px;">HTML
+                                                        </td>
+                                                        <td>
+                                                            <input type="checkbox" name="" id="" style="width: 25px; height: 20px;">Web Design
+                                                        </td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="checkbox" name="" id="" style="width: 25px; height: 20px;">CSS
+                                                        </td>
+                                                        <td>
+                                                        <input type="checkbox" name="" id="" style="width: 25px; height: 20px;">Dashboard Design 
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="checkbox" name="" id="" style="width: 25px; height: 20px;">Php
+                                                        </td>
+                                                        <td>
+                                                            <input type="checkbox" name="" id="" style="width: 25px; height: 20px;">C# Windows Application
+                                                        </td>
+                                                        
+                                                    </tr>
+                                                    <tr>
+                                                        <td> 
+                                                            <input type="checkbox" name="" id="" style="width: 25px; height: 20px;">Java
+                                                        </td>
+                                                        <td> 
+                                                            <input type="checkbox" name="" id="" style="width: 25px; height: 20px;">JavaScript
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <td>
+                                                <table width="100%">
+                                                    <tr>
+                                                        <td>
+                                                            <input type="checkbox" name="" id="" style="width: 25px; height: 20px;">Video Editing
+                                                        </td>
+                                                        <td>
+                                                            <input type="checkbox" name="" id="" style="width: 25px; height: 20px;">Photography
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="checkbox" name="" id="" style="width: 25px; height: 20px;">Technical Presentation
+                                                        </td>
+                                                        <td>
+                                                            <input type="checkbox" name="" id="" style="width: 25px; height: 20px;">Microsoft Applications
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <input type="checkbox" name="comSkills" id="comSkills" style="width: 25px; height: 20px;">Communication Skills
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top">
+                                            <textarea name="other" id="other" cols="30" rows="1" style="font-size: 20px; padding: 5px;" placeholder="Other Skills"></textarea>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </font>
+                        </fieldset>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td style="background-color: rgb(9, 139, 214);"><!--Registration Column for Experience-->
+                        <fieldset>
+                            <legend>
+                                <font size="6">Experience</font>
+                            </legend>
+                            <font size="5">
+                                <table border=0 width="100%">
+                                    <tr>
+                                        <td>
+                                            <label for="companyName">Name of Company</label>
+                                        </td>
+                                        <td>
+                                            <label for="jobTitle">Job Title</label>
+                                        </td>
+                                        <td>
+                                            <label for="yearsOfExperience">Years of Experience</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="text" id="companyName" name="companyName" size="40" style="font-size: 20px; padding: 5px;">
+                                        </td>
+                                        <td>
+                                            <input type="text" id="jobTitle" name="jobTitle" size="20" style="font-size: 20px; padding: 5px;">
+                                        </td>
+                                        <td width="10px">
+                                            <input type="number" id="yearsOfExperience" name="yearsOfExperience" min="0" size="10" style="font-size: 20px; padding: 5px;">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3">
+                                            <label for="experienceDescriptiion">Describe your Experience</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3">
+                                            <textarea name="experienceDescriptiion" id="experienceDescriptiion" cols="50" rows="5" style="font-size: 20px; padding: 5px;"></textarea>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <h5 style="background-color: rgb(29, 230, 129);max-width: fit-content; padding:5px 10px;">add experience</h5>
+                                        </td>
+                                        <td colspan="2" align="center">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </font>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background-color: rgb(9, 139, 214);"><!--Registration Column for Agreement Section-->
+                        <fieldset>
+                            <legend>
+                                <font size="6">Information Disclosure and Agreement</font>
+                            </legend>
+                            <font size="5">
+                                <table border=0 width="100%">
+                                    <tr>
+                                        <td colspan="2">
+                                            <label for="emailAddress">Email Address</label>
+                                            <input type="email" name="emailAddress" id="emailAddress" size="25" style="font-size: 20px; padding: 5px;">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" name="agreeCheck" id="agreeCheck" style="width: 25px; height: 20px;">
+                                            <label for="agreeCheck">I Agree</label>
+                                        </td>
+                                        <td align=center>
+                                            <label for="interviewDateTime">Date and Time of Interview</label>
+                                            <input type="datetime-local" name="interviewDateTime" id="interviewDateTime" style="font-size: 20px; padding: 3px;">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </font>
+                        </fieldset>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr height=100px>
+                    <td><!--Registrtion Column for Submit and Reset Button-->
+                        <table border=0 width="100%">
+                            <tr>
+                                <td align="center">
+                                    <input type="submit" value="Submit Application" style="background-color: rgb(12, 201, 113);padding: 10px 50px; border-radius: 10px; border: none;box-shadow: 2px 2px 5px black;font-size: 20px;">
+                                </td>
+                                <td align="center">
+                                    <input type="reset" value="Cancel Application" style="background-color: rgb(242, 13, 13);padding: 10px 50px; border-radius: 10px; border:none; box-shadow: 2px 2px 5px black;font-size: 20px;">
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </font>
+</body>
+</html>
